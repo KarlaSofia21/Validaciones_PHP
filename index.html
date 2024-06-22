@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="./procesar.php" method="post">
+        <label for="name">Usuario : </label><br>
+        <input type="text" id="nombre" name="nombre" required
+        placeholder="Ingresa tu usuario"  title="El usuario debe ser Luis"><br>
+
+        <label for="Password">Password : </label><br>
+        <input type="password" id="contrasena"  name="contrasena" placeholder="Ingresa tu contraseña"
+         required title="La contraseña debe ser Mendoza"><br>
+
+        <label for="Edad">Edad : </label><br>
+        <input type="number" name="edad" id="edad" placeholder="Ingresa tu edad" required pattern="\d{2}"  
+        title="La edad debe ser mayor a 18">><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
